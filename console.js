@@ -6,7 +6,7 @@ module.exports = {
   
   printWarning: (warningText, commonText) =>
     console.log(
-      `${Colors.bgYellow("Alerta:")} + ${Colors.yellow(warningText)}  ${commonText}`
+      `${Colors.bgMagenta("Alerta:")} + ${Colors.magenta(warningText)}  ${commonText}`
     ),
  
   printError: (errorText, commonText) =>
@@ -16,6 +16,12 @@ module.exports = {
  
   printSuccess: (sucessText, commonText) =>
   console.log(
-    `${Colors.bgGreen("Funcionó:")}  ${Colors.green(sucessText)}  ${commonText}`
-  )
+    `${Colors.bgMagenta("La operación ha funcionado:")}  ${Colors.magenta(sucessText)}  ${commonText}`
+  ),
+
+  printInfo: (infoText, commonText) =>
+  console.log(
+    `${Colors.bgCyan("Datos:")}  ${Colors.cyan(infoText)}  ${commonText}`
+  ),
+
 }
